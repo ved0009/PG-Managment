@@ -8,6 +8,7 @@ import { WebsiteModule } from './Website/website.module';
 import { PgUserModule } from './PgUser/pg-user.module';
 import { PgcaretakerModule } from './PgCareTaker/pgcaretaker.module';
 import { RouterModule } from '@angular/router';
+import{ HttpClientModule} from '@angular/common/http'
  
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     WebsiteModule,
     PgUserModule,
-    PgcaretakerModule
+    PgcaretakerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
