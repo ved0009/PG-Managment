@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 // Replace this with your MONGOURI.
- const MONGOURI = "mongodb://localhost:27017/PGManagement";
+//  const MONGOURI = "mongodb://localhost:27017/PGManagement";
+ const MONGOURI = "mongodb+srv://mongopg:mongopgdb12@pg.rgduo1c.mongodb.net/PGManagement";
 
 // NEW server
 //  const MONGOURI =
