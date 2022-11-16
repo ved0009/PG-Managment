@@ -1,3 +1,5 @@
+ 
+const { json } = require('body-parser');
 const sdc = require('../services/commonSDC.service');
 const commonSDCController = {};
 
@@ -88,10 +90,12 @@ commonSDCController.CurrentLocation = async (req, res) => {
     try {
         const result =  await sdc.location();
         if (result.data != null) {
+            await sdc.savedummylocation(result.data);
             const model = {
                 message: "Successfully",
                 success: true,
-                responseData: result.data
+                responseData: result.data,
+               
             }
             res.send(model);
         } else {
